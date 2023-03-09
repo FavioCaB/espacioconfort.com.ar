@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Esp-Contactos</title>
+</head>
+<body>
+    <header>
+        <!--Enlaces Img-->
+        <a href="../index.html">
+            <img class="logo-header" src="../img/Logo EspCon.png" alt="logo">
+        </a>
+            <!--Enlaces Relativos-->
+            <nav class="menu-nav">
+                <ul class="lista-menu">
+                    <li class="menu-header"><a href="../pages/productos.html">Productos</a></li>
+                    <li class="menu-header"><a href="../pages/promociones.html">Promociones</a></li>
+                    <li class="menu-header"><a href="../pages/contactos.html">Contactos</a></li>
+                    <li class="menu-header"><a href="../pages/donde-nos-encontras.html">Donde nos encontras</a></li>
+                </ul>
+            </nav>
+    </header> 
+    <main id="contactos"> 
+        <!-- Enlace interno-->
+        <a href="#pie">Info</a>
+        <!--Formulario-->
+        <form action="procesar.php" method="post">
+            <div class="form">
+                
+                <label class="lab" for="name">Ingresa tu Nombre y Apellido:</label>
+                    <input class="input1" type="text" placeholder="Nombre y Apellido">
+                    
+                
+                <label class="lab" for="email">Ingresa tu Email:</label>    
+                    <input class="input1" type="email" name="email" id="" placeholder="email@servidor.com">
+                
+                
+                <label class="lab" for="tel">Ingresa tu Telefono:</label>
+                    <input class="input1" type="tel" name="tel" id="" placeholder="123456789">
+                
+                <p>
+                    <!--Texarea-->
+                    <p class="lab">Decinos tu consulta:</p>
+                    <textarea class="input1" name="consulta" id="" cols="30" rows="10"></textarea>
+                </p>
+                <div>
+                <button class="button1" type="submit">Eviar</button>
+                <button type="reset">Borrar</button>
+                </div>
+        </div>
+
+        </form>
+    </main>
+    <footer id="pie">
+        <div class="menu-logo">
+            <div><a href="../index.html">
+                    <img class="logo-e" src="../img/logo E.png" alt="logo-marca">
+                </a>
+            </div>
+        </div>
+        <div class="menu-iconos">
+            <div class="iconos-red">
+                <img class="img-iconos" src="../img/iconos/facebook.webp" alt="icono facebook">
+                    <a href="https://www.facebook.com/espacio.confort.cba" target="_blank"></a>
+            </div>
+            <div class="iconos-red">     
+                <img class="img-iconos" src="../img/iconos/instagram.webp" alt="icono instagram">
+                    <a href="https://www.instagram.com/espacio.confort/" target="_blank"></a>
+            </div>
+            <div class="iconos-red"> 
+                <img class="img-iconos" src="../img/iconos/ubicacion.webp" alt="icono maps">
+                    <a href="../pages/donde-nos-encontras.html"></a>
+            </div>
+            <div class="iconos-red">       
+                <img class="img-iconos" src="../img/iconos/whatsapp.webp" alt="icono Whatsapp">
+                    <a href=""></a>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>

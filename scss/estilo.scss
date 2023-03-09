@@ -1,0 +1,380 @@
+header{
+    background-color: #8b008b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+.lista-menu{
+    display: flex;
+    text-decoration: none;
+    list-style-type:none;
+    padding: 5px;
+    margin: 5px;
+    font-family: monospace;
+}
+
+.logo-header{
+    width: 400px;
+    height: 100px;
+} 
+
+
+.menu-header{padding: 10px;
+            justify-items: normal; 
+            margin: 5px;
+    
+}
+/*index*/
+.logo-cannon{width: 180px;
+    height: 80px;
+    border: 10px;
+    border-color: black;
+
+}
+.logo-esperanza{width: 180px;
+    height: 80px;
+    background-color: red;
+
+}
+.prom1{display: flex;
+    justify-content: center;
+    border:  solid 5px black;
+    border-style: 80px;
+    border-radius: 5px;
+    background-color: rgb(153, 119, 150);
+    width: 100%
+    
+
+}
+.list-card {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*productos*/
+
+
+
+
+
+/*promociones*/
+
+
+
+
+
+
+/*contactos*/
+#contactos{display: flex;
+    justify-content: center;
+    background-image: url(../img/imagenes/Cama\ 2\ plaza.jpg) ;
+    background-size: 100%;
+    background-position: center;
+    
+    
+}
+
+.form{display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 450px; */
+    width: 500px;
+    height: 450px;
+    align-content: center;
+    padding: 30px;
+    background-color:  rgb(245, 199, 235,60%);
+    
+}
+.lab{font-family: serif;
+    font-size: 20px;
+    color: rgb(3, 0, 2);
+    padding: 5px;
+    margin: 5px; 
+    
+    
+
+}
+.input1 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #fff;
+    background-color: rgb(28,28,30);
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    max-width: 190px;
+    transition: .4s;
+}
+
+.input1:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+.input1:focus {
+    box-shadow: 0 0 0 .15vw rgb(115, 248, 219);
+}
+
+button {
+    background-color: black;
+    border: 1px solid rgb(209,213,219);
+    border-radius: .5rem;
+    color: white;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .45rem 1rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: limegreen
+}
+
+button:focus {
+    outline: 2px solid rgba(0,0,0,0.1);
+    outline-offset: 2px;
+}
+
+button:focus-visible {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#pie{
+    display: block;
+}
+.menu-logo{
+    display: flex;
+    justify-content: center;
+}
+.menu-iconos{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*donde nos encontras*/
+.grid-container{
+    display: grid ;
+    grid-template-areas: 
+    "main article"
+    "nav aside"
+    ;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-auto-rows: 100px;
+    background-image: url(../img/imagenes/cama\ 1\ plaza\ 2.jpg);
+    background-color:black;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+    /*google-map*/
+
+
+    #donde-container{
+            display: flex ; 
+            padding: 40px;
+            background-size: 100%;
+            background-position: center;
+            justify-content:center;
+            
+    }
+
+    .map{padding: 10px;
+        width: 500px;
+        height: 70% ;
+        border: 5px solid black;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*descripcion*/
+
+    .estamos-container{display: flex;
+            width: 100%;
+            height: 100%;
+            
+            
+    }
+    .estamos{ 
+        padding: 30px;
+        margin: 20px;
+        color: rgb(75, 73, 73);
+        background-color: rgba(189, 186, 240, 0.8);
+        border: solid 2px black ;
+        font-style: italic;
+        color: black;
+        justify-self: center;
+        align-self: center;
+        
+    }
+
+    /*opinion*/
+    
+    .opinion-container{ display: flex;
+        justify-self: center;
+        background-color: rgba(241, 233, 111, 0.911);
+        border: 3px solid black;
+        margin: 10px;
+        width: 400px;
+        height: 70%;
+        justify-content: center;
+        border-radius: 10%;
+        
+    }
+
+            
+    
+    /*imagen-frente*/
+    .img-container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .img-fren1{
+        width: 85%;
+        height: 70%;
+        border: 3px solid black;
+        margin: 10px;
+       
+    }
+
+    
+    
+
+
+
+
+
+/*Pie de pagina*/
+
+footer{
+    background-color: darkmagenta;
+    position: absolute;
+    width: 99%;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-top: 10px;
+    border-color: black;
+    position: absolute;
+    
+}
+.iconos-red{ padding: 10px;
+}
+.logo-e{width: 50px;
+        height: 80px;
+}
+.img-iconos{
+    width: 25px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+
+a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; 
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    /*menu de navegacion*/
+    .menu-nav{
+        display:flex;
+        
+    }
+    .logo-header{
+        width: 250px;
+        height: 80px;
+    }
+    .lista-menu{
+        display: block;
+        padding: 10px;
+        margin: 0;
+    }
+    /*contactos*/
+    .lab{
+        font-size: 15px;
+        
+    }
+    .input1{
+        font-size: 15px;
+    }
+    .form{display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 450px;
+        align-content: center;
+        padding: 30px;
+        background-color:  rgb(245, 199, 235,60%);
+        
+    }
+    footer{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+/*donde nos encontras*/
+.grid-container {
+    display: block;
+    background-color: black;
+    justify-self: center;
+    background-image: none;
+}
+.map{
+    width: 400px;
+    height: 100%;
+}
+
+
+
+
+.opinion-container{ display: flex;
+    justify-self: center;
+    background-color: rgba(241, 233, 111, 0.911);
+    border: 3px solid white;
+    margin-left: 20%;
+    width: 350px;
+    height: 50%;
+    border-radius: 10%;
+    }
+
+}
