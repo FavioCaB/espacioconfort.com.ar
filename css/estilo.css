@@ -1,31 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 header {
-  background-color: #8b008b;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image:linear-gradient(black,darkmagenta,black);
 }
 
-.lista-menu {
-  display: flex;
-  text-decoration: none;
+.logo {
+  max-width: 18rem;
+}
+
+.nav-list {
   list-style-type: none;
-  padding: 5px;
-  margin: 5px;
-  font-family: monospace;
+  display: flex;
+  gap: 1rem;
 }
 
-.logo-header {
-  width: 400px;
-  height: 100px;
+.nav-list li a {
+  text-decoration: none;
+  color: white;
 }
 
-.menu-header {
-  padding: 10px;
-  justify-items: normal;
-  margin: 5px;
+.abrir-menu,
+.cerrar-menu {
+  display: none;
 }
 
-/*index*/
+.grid-conteiner {
+  width: 90%;
+  max-width: 1000px;
+  border: 10px solid black;
+  margin: auto;
+  font-size: 50px;
+  text-align: center;
+}
+
+.grid-conteiner > div {
+  padding: 20px;
+  color: #fff;
+  background-color: blue;
+}
+
 .logo-cannon {
   width: 180px;
   height: 80px;
@@ -49,10 +71,26 @@ header {
   width: 100%;
 }
 
+.prod1 {
+  display: flex;
+  justify-content: center;
+  border: solid 5px black;
+  border-style: 80px;
+  border-radius: 5px;
+  background-color: rgb(153, 119, 150);
+  width: 100%;
+}
+
 .list-card {
   display: flex;
   flex-direction: row;
   padding: 10px;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-color: red;
 }
 
 /*productos*/
@@ -110,7 +148,7 @@ header {
   box-shadow: 0 0 0 0.15vw rgb(115, 248, 219);
 }
 
-button {
+.button1 {
   background-color: black;
   border: 1px solid rgb(209, 213, 219);
   border-radius: 0.5rem;
@@ -177,6 +215,7 @@ button:focus-visible {
   background-size: 100%;
   background-position: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .map {
@@ -219,6 +258,7 @@ button:focus-visible {
   height: 70%;
   justify-content: center;
   border-radius: 10%;
+  overflow: hidden;
 }
 
 /*imagen-frente*/
@@ -237,7 +277,7 @@ button:focus-visible {
 
 /*Pie de pagina*/
 footer {
-  background-color: darkmagenta;
+  background-image:linear-gradient(black ,darkmagenta) ;
   position: absolute;
   width: 99%;
   height: 150px;
@@ -256,7 +296,18 @@ footer {
 .logo-e {
   width: 50px;
   height: 80px;
+  animation-name: logo-es;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 4s;
 }
+@keyframes logo-es {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+}
+  
+
 
 .img-iconos {
   width: 25px;
@@ -270,19 +321,54 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 900px) {
-  /*menu de navegacion*/
-  .menu-nav {
-    display: flex;
-  }
-  .logo-header {
-    width: 250px;
-    height: 80px;
-  }
-  .lista-menu {
+@media screen and (max-width: 700px) {
+  .abrir-menu,
+  .cerrar-menu {
     display: block;
-    padding: 10px;
-    margin: 0;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .abrir-menu {
+    color: white;
+  }
+  .cerrar-menu {
+    color: #ececec;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  .nav-list li a {
+    color: rgba(236, 236, 236, 0.9254901961);
+  }
+}
+@media screen and (max-width: 900px) {
+  /*productos*/
+  .car {
+    display: flex;
+    display: block;
   }
   /*contactos*/
   .lab {

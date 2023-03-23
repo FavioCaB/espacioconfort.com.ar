@@ -1,0 +1,99 @@
+#contactos{display: flex;
+    justify-content: center;
+    background-image: url(../img/imagenes/Cama\ 2\ plaza.jpg) ;
+    background-size: 100%;
+    background-position: center;
+   
+    
+}
+
+.form{display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    /* padding-left: 450px; */
+    width: 500px;
+    height: 450px;
+    align-content: center;
+    padding: 30px;
+    background-color:  rgb(245, 199, 235,60%);
+    
+}
+.lab{font-family: serif;
+    font-size: 20px;
+    color: rgb(3, 0, 2);
+    padding: 5px;
+    margin: 5px; 
+    
+    
+
+}
+.input1 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #fff;
+    background-color: rgb(28,28,30);
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    max-width: 190px;
+    transition: .4s;
+}
+
+.input1:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+.input1:focus {
+    box-shadow: 0 0 0 .15vw rgb(115, 248, 219);
+}
+
+.button1 {
+    background-color: black;
+    border: 1px solid rgb(209,213,219);
+    border-radius: .5rem;
+    color: white;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .45rem 1rem;
+    text-align: center;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: limegreen
+}
+
+button:focus {
+    outline: 2px solid rgba(0,0,0,0.1);
+    outline-offset: 2px;
+}
+
+button:focus-visible {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#pie{
+    display: block;
+}
+.menu-logo{
+    display: flex;
+    justify-content: center;
+}
+.menu-iconos{
+    display: flex;
+    justify-content: center;
+}

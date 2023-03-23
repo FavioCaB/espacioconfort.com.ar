@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="descripcion" content="Encotra los mejores colchones,bases y cunas en este lugar. Descuentos del 25% en efectivo. Recibimos todas las tarjetas. Ahora 12 y Ahora 18 .">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!--bootstrap-->
     <link rel="stylesheet" href="./Libreria/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <!--Hoja estilo css-->
@@ -14,25 +18,55 @@
 <body>
   <!--Enlace Relativos-->
   <header>
-      <a href="./index.html">
-        <img class="logo-header" src="./img/Logo EspCon.png" alt="Logo">
-      </a>
-      
-      <nav class="menu-nav">
-        <ul class="lista-menu">
-          <li class="menu-header"><a href="./pages/productos.html">Productos</a></li>
-          <li class="menu-header"><a href="./pages/promociones.html">Promociones</a></li>  
-          <li class="menu-header"><a href="./pages/contactos.html">Contactos</a></li>
-          <li class="menu-header"><a href="./pages/donde-nos-encontras.html">Donde nos encontras</a></li>
-        </ul>  
-      </nav>    
+    <img class="logo" src="./img/Logo EspCon.png" alt="Logo">
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <nav class="nav" id="nav" style=" z-index: 50;">
+        <button id="cerrar" class="cerrar-menu"><i class="bi bi-list"></i></button>
+        <ul class="nav-list">
+            <li><a href="./pages/productos.html">Productos</a></li>
+            <li><a href="./pages/productos.html">Promociones</a></li>
+            <li><a href="./pages/contactos.html">Contactos</a></li>
+            <li><a href="./pages/donde-nos-encontras.html">Donde nos encontras</a></li>
+        </ul>
+    </nav>
   </header>
 
-  <main>
+
+  <main class="index">
+
+    <!--baner-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="banner" src="./img/logo cannon.avif" class="d-block w-100" alt="..." style="z-index: 10;">
+        </div>
+        <div class="carousel-item">
+          <img class="banner" src="./img/imagenes/Frente1.jpg" class="d-block w-100" alt="..." style="z-index: 10;">
+        </div>
+        <div class="carousel-item">
+          <img class="banner" src="./img/logo La esperanza.png" class="d-block w-100" alt="..." style="z-index: 10;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+
     <h2 class="prom1">Promociones</h2>
 
-    <div class="list-card">
-      <div class="card container" style="width: 18rem;">
+    <div class="list-card" style="z-index: 10;">
+      <div class="card container" "car-model" style="width: 18rem;">
         <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Promo Almohadas</h5>
@@ -64,61 +98,52 @@
           <a href="#" class="btn btn-primary">comprar</a>
         </div>
       </div>
+    </div>
+
+  <h2 class="prod1">Productos</h2>
+    
+  <div class="list-card container">
       <div class="card container" style="width: 18rem;">
         <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Promo Almohadas</h5>
-          <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
+          <div class="card-body">
+            <h5 class="card-title">Promo Almohadas</h5>
+            <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
           <a href="#" class="btn btn-primary">comprar</a>
-        </div>
+          </div>
+      </div>
+      <div class="card container" style="width: 18rem;">
+        <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Promo Almohadas</h5>
+            <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+      </div>
+      <div class="card container" style="width: 18rem;">
+        <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Promo Almohadas</h5>
+            <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
+      </div>
+      <div class="card container" style="width: 18rem;">
+        <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Promo Almohadas</h5>
+            <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
+            <a href="#" class="btn btn-primary">comprar</a>
+          </div>
       </div>
   </div>
-
-  <div style="display: flex; justify-content: space-around; flex-direction:row ;">
-    <div class="card container" style="width: 18rem;">
-      <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Promo Almohadas</h5>
-        <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
-        <a href="#" class="btn btn-primary">comprar</a>
-      </div>
-    </div>
-    <div class="card container" style="width: 18rem;">
-      <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Promo Almohadas</h5>
-        <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
-        <a href="#" class="btn btn-primary">comprar</a>
-      </div>
-    </div>
-    <div class="card container" style="width: 18rem;">
-      <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Promo Almohadas</h5>
-        <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
-        <a href="#" class="btn btn-primary">comprar</a>
-      </div>
-    </div>
-    <div class="card container" style="width: 18rem;">
-      <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Promo Almohadas</h5>
-        <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
-        <a href="#" class="btn btn-primary">comprar</a>
-      </div>
-    </div>
-    <div class="card container" style="width: 18rem;">
-      <img src="./img/Promociones/Almohadas.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Promo Almohadas</h5>
-        <p class="card-text">Promo de 2 almohadas viscoelastica inteligentes, anti acaros, con fundas labables y argonomicas adaptables. </p>
-        <a href="#" class="btn btn-primary">comprar</a>
-      </div>
-    </div>
-</div>
+  <div class="telefonos">
+    <h1>Comunicate con nosotros</h1>
+    <h2>3512778104</h2>
+    <h2>3513092618</h2>
+  </div>
       
     
-    <div>
+    <div class="marcas">
       <!--Enlaces Absolutos-->
         <a href="https://www.cannon.com.ar/" target="_blank">
         <img class="logo-cannon"  src="./img/logo cannon.avif" alt="Logo Cannon">
@@ -131,25 +156,37 @@
     </div>
   </main>
 
-  <footer>
-    <div class="iconos-red">
-      <img class="img-iconos" src="./img/iconos/facebook.webp" alt="icono facebook">
-        <a class="menu-footer" href="https://www.facebook.com/espacio.confort.cba" target="_blank">Espacio.confort</a>
+  <footer id="pie">
+    <div class="menu-logo">
+        <div><a class=" logo-e" href=./index.html">
+                <img class="logo-e" src="./img/logo E.png" alt="logo-marca">
+            </a>
+        </div>
     </div>
-    <div>   
-      <img class="img-iconos" src="./img/iconos/instagram.webp" alt="icono instagram">
-        <a class="menu-footer" href="https://www.instagram.com/espacio.confort/" target="_blank">Espacio.confort</a>
-    </div>
-    <div><img class="logo-e" src="./img/logo E.png" alt="logo-marca"></div>
-    <div>   
-      <img class="img-iconos" src="./img/iconos/ubicacion.webp" alt="icono maps">
-        <a class="menu-footer" href="">Maestro Vidal 305</a>
-    </div>
-    <div>      
-      <img class="img-iconos" src="./img/iconos/whatsapp.webp" alt="icono Whatsapp">
-        <a class="menu-footer" href="">351-3092618</a>
-    </div>    
+    <div class="menu-iconos">
+        <div class="iconos-red">
+          <a href="https://www.facebook.com/espacio.confort.cba" target="_blank">
+            <img class="img-iconos" src="./img/iconos/facebook.webp" alt="icono facebook">
+          </a>
+        </div>
+        <div class="iconos-red"> 
+          <a href="https://www.instagram.com/espacio.confort/" target="_blank">    
+            <img class="img-iconos" src="./img/iconos/instagram.webp" alt="icono instagram">
+          </a>
+        </div>
+        <div class="iconos-red"> 
+          <a href="./pages/donde-nos-encontras.html">
+            <img class="img-iconos" src="./img/iconos/ubicacion.webp" alt="icono maps">
+          </a>
+        </div>
+        <div class="iconos-red"> 
+          <a href="../pages/telefonos.html">      
+            <img class="img-iconos" src="./img/iconos/whatsapp.webp" alt="icono Whatsapp">
+          </a>
+        </div>
+    </div>   
   </footer>
   <script src="./Libreria/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/header.js"></script>
 </body>
 </html
