@@ -1,12 +1,11 @@
 
-@import "navbar";
 @import "index";
+@import "navbar";
 @import "produc";
 @import "prom";
 @import "contac";
 @import "donde";
-
-$colorpro: rgb(153, 119, 150);
+@import "tel";
 
 
 
@@ -19,7 +18,7 @@ $colorpro: rgb(153, 119, 150);
 footer {
     background-image: linear-gradient(black,darkmagenta);
     position: absolute;
-    width: 99%;
+    width: 100%;
     height: 150px;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +29,7 @@ footer {
     
 }
 .iconos-red{ padding: 10px;
-    transform: rotate(180deg);
+    
 }
 
 
@@ -54,116 +53,17 @@ footer {
 }
 
 
-/*a{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white; 
-    text-decoration: none;
-}*/
 
-@media screen and (max-width: 700px) {
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .abrir-menu {
-        color: white;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-        overflow: visible;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-list li a {
-        color: #ecececec;
-}
-}
 @media screen and (max-width: 900px) {
-    /*productos*/
-    .car{display: flex;
-        display: block;
 
-    }
-    
-    /*contactos*/
-    .lab{
-        font-size: 15px;
-        
-    }
-    .input1{
-        font-size: 15px;
-    }
-    .form{display: flex;
-        color: white;
-        flex-direction: column;
+    footer{
+        position: absolute;
+        display: flex;
         justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 450px;
-        align-content: center;
-        padding: 30px;
-        background-color:  rgb(245, 199, 235,60%);
-        
     }
     footer{
         position: absolute;
         display: flex;
         justify-content: center;
     }
-/*donde nos encontras*/
-.grid-container {
-    display: block;
-    background-color: black;
-    justify-self: center;
-    background-image: none;
-}
-.map{
-    width: 400px;
-    height: 100%;
-}
-
-
-
-
-.opinion-container{ display: flex;
-    justify-self: center;
-    background-color: rgba(241, 233, 111, 0.911);
-    border: 3px solid white;
-    margin-left: 20%;
-    width: 350px;
-    height: 50%;
-    border-radius: 10%;
-    }
-    
-}
+}    

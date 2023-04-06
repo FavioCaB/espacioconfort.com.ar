@@ -1,8 +1,11 @@
-
+.index{
+    background-image:radial-gradient(#bb07bb, #800080, #160016);
+}
 
 .carousel-inner{
-    padding: 15px;
-    border: 3px solid $colorpro ;
+    
+    border: 3px solid black ;
+    
 }
 .logo-cannon{width: 180px;
     height: 80px;
@@ -20,19 +23,21 @@
     border:  solid 5px black;
     border-style: 80px;
     border-radius: 5px;
-    background-color: $colorpro;
-    width: 100%
+    background-color: rgb(153, 119, 150);
+    width: 98%;
+    
 }
 .prod1{display: flex;
     justify-content: center;
     border:  solid 5px black;
     border-style: 80px;
     border-radius: 5px;
-    background-color: $colorpro;
-    width: 100%
+    background-color: rgb(153, 119, 150);
+    width: 98%;
+    
 
 }
-.list-card {
+.list-card3 {
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -41,6 +46,10 @@
     width: 100%;
     height: 300px;
     background-color: red;
+}
+.marcas{
+    display: flex;
+    justify-content: space-around;
 }
 
 

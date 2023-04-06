@@ -1,0 +1,42 @@
+.promo{
+    height: 100%;
+    padding-bottom: 20px;
+    background:url(../img/imagen\ de\ colchon.jpg);
+}
+.list-card2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 15px;
+    padding-bottom: 15px;
+}
+.card.container{
+    border: 3px solid rgb(92, 26, 75);
+    box-shadow: 5px 5px #0006 ;
+    border-radius: 10px;
+}
+.card-img-top{
+    max-width: 100%;
+    max-height: 200px;
+    border:2px solid black;
+    padding:5px;
+    margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .list-card2{display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+}
+@media screen and (max-width: 600px){
+    .list-card2{ display: grid;
+                grid-template-columns: repeat(1,1fr);
+}
+.prom1{
+    width: 90%;
+}
+
+
+}

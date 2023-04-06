@@ -1,51 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+.index {
+  background-image: radial-gradient(#bb07bb, #800080, #160016);
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-  background-image:linear-gradient(black,darkmagenta,black);
-}
-
-.logo {
-  max-width: 18rem;
-}
-
-.nav-list {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-list li a {
-  text-decoration: none;
-  color: white;
-}
-
-.abrir-menu,
-.cerrar-menu {
-  display: none;
-}
-
-.grid-conteiner {
-  width: 90%;
-  max-width: 1000px;
-  border: 10px solid black;
-  margin: auto;
-  font-size: 50px;
-  text-align: center;
-}
-
-.grid-conteiner > div {
-  padding: 20px;
-  color: #fff;
-  background-color: blue;
+.carousel-inner {
+  border: 3px solid black;
 }
 
 .logo-cannon {
@@ -68,7 +26,7 @@ header {
   border-style: 80px;
   border-radius: 5px;
   background-color: rgb(153, 119, 150);
-  width: 100%;
+  width: 98%;
 }
 
 .prod1 {
@@ -78,10 +36,10 @@ header {
   border-style: 80px;
   border-radius: 5px;
   background-color: rgb(153, 119, 150);
-  width: 100%;
+  width: 98%;
 }
 
-.list-card {
+.list-card3 {
   display: flex;
   flex-direction: row;
   padding: 10px;
@@ -93,9 +51,200 @@ header {
   background-color: red;
 }
 
-/*productos*/
-/*promociones*/
-/*contactos*/
+.marcas {
+  display: flex;
+  justify-content: space-around;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image: linear-gradient(black, darkmagenta, black);
+}
+
+.logo {
+  max-width: 18rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-list li {
+  text-decoration: none;
+  color: white;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li:hover {
+  background-color: rgb(59, 6, 59);
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid rgb(138, 6, 61);
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+.grid-conteiner {
+  width: 90%;
+  max-width: 1000px;
+  border: 10px solid black;
+  margin: auto;
+  font-size: 50px;
+  text-align: center;
+}
+
+.grid-conteiner > div {
+  padding: 20px;
+  color: #fff;
+  background-color: blue;
+}
+
+@media screen and (max-width: 700px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .abrir-menu {
+    color: white;
+  }
+  .cerrar-menu {
+    color: #ececec;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+  .nav-list li a {
+    color: rgba(236, 236, 236, 0.9254901961);
+  }
+}
+.productos {
+  background-image: linear-gradient(rgb(77, 45, 69), dimgray, rgb(77, 45, 69));
+  padding: 20px;
+}
+
+.list-group {
+  width: 200px;
+  margin-right: 0px;
+  border: 2px solid black;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.list-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+p {
+  padding-bottom: 40px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .list-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .col1 {
+    display: none;
+  }
+  .productos {
+    padding-left: 60px;
+    justify-self: center;
+  }
+  .prod1 {
+    width: 90%;
+  }
+}
+.promo {
+  height: 100%;
+  padding-bottom: 20px;
+  background: url(../img/imagen\ de\ colchon.jpg);
+}
+
+.list-card2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
+  padding-bottom: 15px;
+}
+
+.card.container {
+  border: 3px solid rgb(92, 26, 75);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  max-height: 200px;
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .list-card2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .list-card2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .prom1 {
+    width: 90%;
+  }
+}
 #contactos {
   display: flex;
   justify-content: center;
@@ -109,9 +258,8 @@ header {
   color: white;
   flex-direction: column;
   align-items: center;
-  /* padding-left: 450px; */
   width: 500px;
-  height: 450px;
+  height: 600px;
   align-content: center;
   padding: 30px;
   background-color: rgba(245, 199, 235, 0.6);
@@ -167,16 +315,16 @@ header {
   touch-action: manipulation;
 }
 
-button:hover {
+.button1:hover {
   background-color: limegreen;
 }
 
-button:focus {
+.button1:focus {
   outline: 2px solid rgba(0, 0, 0, 0.1);
   outline-offset: 2px;
 }
 
-button:focus-visible {
+.button1:focus-visible {
   box-shadow: none;
 }
 
@@ -194,15 +342,33 @@ button:focus-visible {
   justify-content: center;
 }
 
-/*donde nos encontras*/
+@media screen and (max-width: 900px) {
+  .lab {
+    font-size: 15px;
+  }
+  .input1 {
+    font-size: 15px;
+  }
+  .form {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    align-content: center;
+    padding: 30px;
+    background-color: rgba(245, 199, 235, 0.6);
+  }
+}
 .grid-container {
   display: grid;
-  grid-template-areas: "main article" "nav aside";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-auto-rows: 100px;
   background-image: url(../img/imagenes/cama\ 1\ plaza\ 2.jpg);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.86);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -275,100 +441,28 @@ button:focus-visible {
   margin: 10px;
 }
 
-/*Pie de pagina*/
-footer {
-  background-image:linear-gradient(black ,darkmagenta) ;
-  position: absolute;
-  width: 99%;
-  height: 150px;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  border-top: 10px;
-  border-color: black;
-  position: absolute;
-}
-
-.iconos-red {
-  padding: 10px;
-}
-
-.logo-e {
-  width: 50px;
-  height: 80px;
-  animation-name: logo-es;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-duration: 4s;
-}
-@keyframes logo-es {
-    0%{transform: rotate(0deg);}
-    50%{transform: rotate(180deg);}
-    100%{transform: rotate(360deg);}
-}
-  
-
-
-.img-iconos {
-  width: 25px;
-  height: 35px;
-  margin-right: 5px;
-}
-
-a {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 700px) {
-  .abrir-menu,
-  .cerrar-menu {
-    display: block;
-    border: 0;
-    font-size: 1.25rem;
-    background-color: transparent;
-    cursor: pointer;
-  }
-  .abrir-menu {
-    color: white;
-  }
-  .cerrar-menu {
-    color: #ececec;
-  }
-  .nav {
-    opacity: 0;
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #1c1c1c;
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-  }
-  .nav.visible {
-    opacity: 1;
-    visibility: visible;
-    overflow: visible;
-  }
-  .nav-list {
-    flex-direction: column;
-    align-items: end;
-  }
-  .nav-list li a {
-    color: rgba(236, 236, 236, 0.9254901961);
-  }
-}
 @media screen and (max-width: 900px) {
-  /*productos*/
-  .car {
+  /*donde nos encontras*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: black;
+    justify-self: center;
+    background-image: none;
+  }
+  .map {
+    width: 400px;
+    height: 100%;
+  }
+  .opinion-container {
     display: flex;
-    display: block;
+    justify-self: center;
+    background-color: rgba(241, 233, 111, 0.911);
+    border: 3px solid white;
+    width: 350px;
+    height: 50%;
+    border-radius: 10%;
   }
   /*contactos*/
   .lab {
@@ -389,11 +483,6 @@ a {
     padding: 30px;
     background-color: rgba(245, 199, 235, 0.6);
   }
-  footer {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-  }
   /*donde nos encontras*/
   .grid-container {
     display: block;
@@ -410,9 +499,148 @@ a {
     justify-self: center;
     background-color: rgba(241, 233, 111, 0.911);
     border: 3px solid white;
-    margin-left: 20%;
     width: 350px;
     height: 50%;
     border-radius: 10%;
+  }
+}
+.telefonos {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-image: url(../img/imagenes/telefonista2.jpeg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  background-color: black;
+}
+
+.tel {
+  flex-direction: column;
+  background-color: rgba(235, 232, 70, 0.6);
+}
+
+.com {
+  font-size: 70px;
+  padding: 40px;
+}
+
+.tel1 {
+  padding: 15px;
+  margin: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-size: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.tel1:hover {
+  background-color: rgb(22, 235, 22);
+}
+
+.tel2 {
+  padding: 15px;
+  margin-left: 35%;
+  margin-right: 35%;
+  font-size: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.tel2:hover {
+  background-color: rgb(22, 235, 22);
+}
+
+/* ----------------------------------------------
+  Generated by AnimatiSS
+  Licensed under FreeBSD License
+  URL: https://xsgames.co/animatiss
+  Twitter: @xsgames_
+---------------------------------------------- */
+.shake-left-right {
+  animation: shake-left-right 1.2s linear both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-left-right {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
+.shake-left-right:hover {
+  animation: none;
+}
+
+/*Pie de pagina*/
+footer {
+  background-image: linear-gradient(black, darkmagenta);
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  border-top: 10px;
+  border-color: black;
+  position: absolute;
+}
+
+.iconos-red {
+  padding: 10px;
+}
+
+.logo-e {
+  width: 50px;
+  height: 80px;
+  animation-name: logo-es;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+}
+
+@keyframes logo-es {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.img-iconos {
+  width: 25px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=estilo.css.map */

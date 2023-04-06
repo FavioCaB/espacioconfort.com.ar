@@ -30,7 +30,13 @@ header {
         text-decoration: none;
         color: white;
     }
-    
+    li:hover{
+    background-color: rgb(59, 6, 59);
+    border-radius: 10px;
+    padding: 5px;
+    border:1px solid rgb(138, 6, 61) ;
+}
+
 }
 
 .abrir-menu,
@@ -53,4 +59,53 @@ header {
     color: #fff;
     background-color: blue;
 
+}
+@media screen and (max-width: 700px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: white;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+        overflow: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+}
 }

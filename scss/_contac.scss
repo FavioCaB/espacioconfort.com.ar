@@ -11,9 +11,9 @@
     color: white;
     flex-direction: column;
     align-items: center;
-    /* padding-left: 450px; */
+ 
     width: 500px;
-    height: 450px;
+    height: 600px;
     align-content: center;
     padding: 30px;
     background-color:  rgb(245, 199, 235,60%);
@@ -73,16 +73,16 @@
     touch-action: manipulation;
 }
 
-button:hover {
+.button1:hover {
     background-color: limegreen
 }
 
-button:focus {
+.button1:focus {
     outline: 2px solid rgba(0,0,0,0.1);
     outline-offset: 2px;
 }
 
-button:focus-visible {
+.button1:focus-visible {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -96,4 +96,25 @@ button:focus-visible {
 .menu-iconos{
     display: flex;
     justify-content: center;
+}
+@media screen and (max-width: 900px){
+    .lab{
+        font-size: 15px;
+        
+    }
+    .input1{
+        font-size: 15px;
+    }
+    .form{display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 450px;
+        align-content: center;
+        padding: 30px;
+        background-color:  rgb(245, 199, 235,60%);
+        
+    }
 }

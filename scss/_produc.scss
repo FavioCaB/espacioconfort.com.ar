@@ -1,10 +1,46 @@
 .productos{
+    background-image: linear-gradient(rgb(77, 45, 69),dimgray,rgb(77, 45, 69));
     padding:20px;
 }
+
 .list-group{
+    width: 200px;
+    margin-right: 0px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
-    border: 2px solid violet;
     
+}
+.list-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+p{padding-bottom: 40px;}
+
+.btn{
+    position: absolute;
+    bottom: 20px;
 }
 
 
+
+
+
+@media screen and (max-width: 700px) {
+    .list-card{display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+    .col1{
+    display: none;
+}
+.productos{
+    padding-left: 60px;
+    justify-self: center;
+}
+
+.prod1{width: 90%;}
+
+}

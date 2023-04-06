@@ -1,14 +1,10 @@
 .grid-container{
     display: grid ;
-    grid-template-areas: 
-    "main article"
-    "nav aside"
-    ;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: repeat(2,1fr)  ;
+    grid-template-rows:repeat(2,1fr)  ;
     grid-auto-rows: 100px;
     background-image: url(../img/imagenes/cama\ 1\ plaza\ 2.jpg);
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.86);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +38,7 @@
     .estamos-container{display: flex;
             width: 100%;
             height: 100%;
-            animation: $animacion;
+            
             
             
     }
@@ -88,5 +84,87 @@
         height: 70%;
         border: 3px solid black;
         margin: 10px;
-       
     }
+
+
+@media screen and (max-width: 900px){
+        /*donde nos encontras*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        background-color: black;
+        justify-self: center;
+        background-image: none;
+    }
+    .map{
+        width: 400px;
+        height: 100%;
+    }
+
+    .opinion-container{ display: flex;
+        justify-self: center;
+        background-color: rgba(241, 233, 111, 0.911);
+        border: 3px solid white;
+        width: 350px;
+        height: 50%;
+        border-radius: 10%;
+        }
+        
+        /*contactos*/
+    .lab{
+        font-size: 15px;
+        
+        }
+    .input1{
+        font-size: 15px;
+        }
+    .form{display: flex;
+        color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 450px;
+        align-content: center;
+        padding: 30px;
+        background-color:  rgb(245, 199, 235,60%);
+        
+        }
+    
+    /*donde nos encontras*/
+    .grid-container {
+        display: block;
+        background-color: black;
+        justify-self: center;
+        background-image: none;
+        }          
+    .map{
+        width: 400px;
+        height: 100%;
+        }
+
+
+
+
+    .opinion-container{ display: flex;
+        justify-self: center;
+        background-color: rgba(241, 233, 111, 0.911);
+        border: 3px solid white;
+        width: 350px;
+        height: 50%;
+        border-radius: 10%;
+        }
+    
+}
+
+
+
+
+
+
+
+
+
+
+    
