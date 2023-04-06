@@ -27,7 +27,7 @@
     border-radius: 5px;
     }
 .tel1:hover{
-    background-color: rgb(22, 235, 22);
+    background-color: rgb(22, 168, 235);
 }
 .tel2{
     padding: 15px;
@@ -38,7 +38,7 @@
     border-radius: 5px;
     }
     .tel2:hover{
-        background-color: rgb(22, 235, 22);
+        background-color: rgb(22, 168, 235);
     }
 
 /* ----------------------------------------------
@@ -54,4 +54,28 @@
 @keyframes shake-left-right{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}}
 .shake-left-right:hover{
     animation: none;
+}
+
+@media screen and (max-width: 400px){
+    .telefono{
+        height: 100%;
+    }
+    .com{
+        font-size: x-large;
+    }
+    .tel1{
+        font-size: large;
+        margin-right: 25%;
+    }
+    .tel1:hover{
+        background-color: rgb(22, 168, 235);
+    }
+    .tel2{
+        font-size: large;
+        margin-right: 25%;
+    }
+    .tel2:hover{
+        background-color: rgb(22, 168, 235);
+    }
+    
 }

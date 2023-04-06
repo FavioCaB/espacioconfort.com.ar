@@ -536,7 +536,7 @@ p {
 }
 
 .tel1:hover {
-  background-color: rgb(22, 235, 22);
+  background-color: rgb(22, 168, 235);
 }
 
 .tel2 {
@@ -549,7 +549,7 @@ p {
 }
 
 .tel2:hover {
-  background-color: rgb(22, 235, 22);
+  background-color: rgb(22, 168, 235);
 }
 
 /* ----------------------------------------------
@@ -588,6 +588,28 @@ p {
   animation: none;
 }
 
+@media screen and (max-width: 400px) {
+  .telefono {
+    height: 100%;
+  }
+  .com {
+    font-size: x-large;
+  }
+  .tel1 {
+    font-size: large;
+    margin-right: 25%;
+  }
+  .tel1:hover {
+    background-color: rgb(22, 168, 235);
+  }
+  .tel2 {
+    font-size: large;
+    margin-right: 25%;
+  }
+  .tel2:hover {
+    background-color: rgb(22, 168, 235);
+  }
+}
 /*Pie de pagina*/
 footer {
   background-image: linear-gradient(black, darkmagenta);
